@@ -1,14 +1,14 @@
 import './create.css'
-import {FaTeamspeak} from 'react-icons/fa'
-import {SiMarketo} from 'react-icons/si'
-import {MdCastForEducation} from 'react-icons/md'
+import {BsWallet} from 'react-icons/bs'
+import {TbFileUpload} from 'react-icons/tb'
+import { GoTasklist }from 'react-icons/go'
 const Create = () => {
   return (
     <section className="create" id="create">
         <h1 className='header-h1'>create and sell your <span>NFTs</span></h1>
         <div className="flex-continer">
             <article className="flex-item">
-                <SiMarketo className='icon'/>
+                <BsWallet className='icon'/>
                 <h3>set up your wallet</h3>
                 <p>
                     once you've set up your wallet of choice,
@@ -17,7 +17,7 @@ const Create = () => {
                 </p>
             </article>
             <article className="flex-item">
-                <MdCastForEducation className='icon'/>
+                <TbFileUpload className='icon'/>
                 <h3>Upload & create collection</h3>
                 <p>
                     upload your work then click my collections and set up your collection
@@ -25,7 +25,7 @@ const Create = () => {
                 </p>
             </article>
             <article className="flex-item">
-                <FaTeamspeak className='icon'/>
+                <GoTasklist className='icon'/>
                 <h3>list them for sale</h3>
                 <p>
                     choose between auctions, fiwed-price listings, and declining-price listings, you choose how you

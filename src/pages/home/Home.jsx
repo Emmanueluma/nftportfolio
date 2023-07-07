@@ -27,11 +27,11 @@ const Home = () => {
                   />
                 </span>
               </h1>
+              <p>
+                Welcome to our vibrant NFT community—a
+                hub for digital art, innovation, and blockchain enthusiasts!
+              </p>
             </section>
-            <p>
-              Welcome to our vibrant NFT community—a
-              hub for digital art, innovation, and blockchain enthusiasts!
-            </p>
             <section className="button">
               <a href="http://" target="_blank" rel="noopener noreferrer"><BiLogoFacebook className='icons' /></a>
               <a href="http://" target="_blank" rel="noopener noreferrer"><BiLogoTwitter className='icons' /></a>

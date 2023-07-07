@@ -7,7 +7,7 @@ footer{
     align-items: center;
 }
 footer small{
-    font-size: 1.1rem;
+    font-size: .9rem;
 }
 footer small a{
     color: var(--main-color);
@@ -25,6 +25,6 @@ footer a.a{
 @media screen and (max-width: 538px) {
     footer{
         padding: 3rem 0;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
