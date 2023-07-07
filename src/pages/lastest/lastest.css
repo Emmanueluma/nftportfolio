@@ -4,6 +4,7 @@ section.lastest{
     padding-top: 1.3rem;
     padding-bottom: 1rem;
     background-color: var(--second-bg-color);
+    clip-path: polygon(0 4%, 100% 0, 100% 94%, 0% 100%);
 }
 section.lastest .nft-container{
     width: 90%;
@@ -70,6 +71,9 @@ section.lastest a.btn{
     }
 }
 @media screen and (max-width: 772px) {
+    section.lastest{
+        clip-path: polygon(0 1%, 100% 0, 100% 99%, 0% 100%);
+    }
     section.lastest .nft-container{
         grid-template-columns: repeat(1, 70%);
         grid-template-rows: repeat(6, 350px);

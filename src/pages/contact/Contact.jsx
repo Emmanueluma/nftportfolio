@@ -81,7 +81,7 @@ const Contact = () => {
                 <article ref={conRef} className={conVisible ? `intersec one active` : `intersec` }>
                     <MdOutlineEmail className="icons" />
                     <h3>email</h3>
-                    <h4>umaemmanuel62@gmail.com</h4>
+                    <h4>main@gmail.com</h4>
                     <a href="mailto:umaemmanuel62@gmail.com" target="_blank" rel="noopener noreferrer">send a message</a>
                 </article>
                 <article ref={conRef1} className={conVisible1 ? `intersec two active` : `intersec` }>

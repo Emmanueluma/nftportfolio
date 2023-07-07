@@ -31,6 +31,7 @@ nav .menu{
     border-radius: 15px;
     color: #fff;
     background-color: var(--bg-color);
+    /* box-shadow: 0 0 7px #fff; */
     position: fixed;
     top: .8rem;
     right: 1rem;
