@@ -1,0 +1,77 @@
+section.about{
+    width: 100%;
+    height: auto;
+    background-color: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section.about div.flex--items{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+section.about div.flex--items.photo{
+    height: auto;
+}
+section.about div.flex--items .image--container{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+section.about div.flex--items .image--container img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
+section.about div.flex--items h1{
+    font-size: 1.5rem;
+}
+section.about div.flex--items h1 span {
+    color: var(--main-color);
+}
+section.about div.flex--items h3{
+    color: #ffffffa8;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+section.about div.flex--items p{
+    margin-bottom: 1.2rem;
+}
+section.about div.flex--items.text{
+    padding: .5rem;
+}
+@media screen and (min-width: 500px) {
+    section.about div.flex--items .image--container img{
+        max-width: 400px;
+        max-height: 400px;
+    }
+    section.about{
+        flex-direction: row;
+    }
+    section.about div.flex--items{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    section.about div.flex--items.photo{
+        width: auto;
+        height: 100%;
+    }
+    section.about div.flex--items.text{
+        width: auto;
+        height: 100%;
+        text-align: left;
+        align-items: flex-start;
+    }
+    section.about div.flex--items.text p{
+        max-width: 650px;
+    }
+    section.about div.flex--items.text a{
+        margin: 0;
+    }
+}

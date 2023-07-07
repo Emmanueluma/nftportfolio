@@ -1,0 +1,201 @@
+header{
+    height: auto;
+}
+header .flex--container {
+    margin:  0 auto;
+    width: 100%;
+    /* height: calc(100vh - 80px); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+header .flex--container div {
+    width: 100%;
+    height: 50%;
+}
+header .flex--container div.text{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header .flex--container div.text section.intro{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.3rem;
+}
+header .flex--container div.text section.intro h1{
+    font-size: 1.4rem;
+}
+header .flex--container div.text section.intro h1 span{
+    color: var(--main-color);
+}
+header .flex--container div.text p{
+    margin-bottom: 1.3rem;
+}
+header .flex--container div.text section.button{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+header .flex--container div.text section.button a{
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+header .flex--container div.text section.button a .icons{
+    color: var(--main-color);
+    font-size: 1.3rem;
+    transition: all .2s;
+}
+header .flex--container div.text section.button a:hover{
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color) ;
+}
+header .flex--container div.text section.button a:hover .icons{
+    color: var(--second-bg-color);
+}
+header .flex--container div.nft-photo{
+    padding: 2rem;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+header .flex--container div.nft-photo .image--container{
+    width: 400px;
+    height: 400px;
+    border-radius: 30% 70% 75% 25% / 30% 30% 70% 70%;
+    position: relative;
+    transform: translateY(20%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(to top right, var(--second-bg-color) , var(--main-color));
+    box-shadow: 0 2px 6px var(--main-color);
+    border: 2px solid #000000a9;
+    animation: downward 3s linear infinite alternate;
+}
+header .flex--container div.nft-photo .image--container img{
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    transform: translateX(-2%);
+    animation: upward 5s linear 2s infinite alternate;
+}
+@keyframes downward {
+    0%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(25%);
+        
+    }
+}
+@keyframes upward {
+    100%{
+        transform: translateX(-8%);
+    }
+}
+@media screen and (min-width: 353px) {
+    header .flex--container div.text section.intro h1{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (min-width: 266px) {
+    header .flex--container div.text section.button{
+        height: 50px;
+    }
+    header .flex--container div.text section.button a{
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 832px) {
+    header .flex--container {
+        margin:  0 auto;
+        width: 90%;
+    }
+    header .flex--container {
+        height: calc(100vh - 80px);
+        flex-direction: row;
+    }
+    header .flex--container div {
+        width: 50%;
+        height: 100%;
+    }
+    header .flex--container div.text section.intro h1{
+        font-size: 2.4rem;
+    }
+}
+@media screen and (max-width: 832px) {
+    header .flex--container div.text{
+        height: auto;
+    }
+    header .flex--container div.nft-photo .image--container{
+        transform: translateY(0%);
+        transform: translateX(10%);
+    }
+    header .flex--container div.nft-photo .image--container{
+        width: 300px;
+        height: 300px;
+    }
+    header .flex--container div.nft-photo .image--container img{
+        width: 500px;
+        height: 500px;
+    }
+    @keyframes downward {
+        100%{
+            transform: translateY(3%);
+        }
+    }
+    @keyframes upward {
+        100%{
+            transform: translateX(-2%);
+        }
+    }
+}
+@media screen and (max-width: 358px) {
+    @keyframes downward {
+        100%{
+            transform: translateY(1%);
+        }
+    }
+}
+@media screen and (max-width: 352px) {
+    header .flex--container div.nft-photo .image--container{
+        transform: translateX(0);
+        transform: translateY(4%);
+    }
+    @keyframes downward {
+        100%{
+            border: 2px solid blue;
+            transform: translateX(2%);
+            transform: translateY(7%);
+        }
+    }
+}
+@media screen and (max-width: 352px) {
+    header .flex--container div.nft-photo .image--container{
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 298px) {
+    header .flex--container div.nft-photo .image--container img{
+        width: 500px;
+        height: 450px;
+    }
+}
