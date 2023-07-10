@@ -5,6 +5,7 @@ import Lastest from './pages/lastest/Lastest';
 import Create from './pages/create/Create';
 import Contact from './pages/contact/Contact'; 
 import Footer from './pages/footer/Footer'; 
+import Question from './pages/question/Question';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <main>
         <About />
         <Services />
+        <Question />
         <Create />
         <Contact />
       </main>
