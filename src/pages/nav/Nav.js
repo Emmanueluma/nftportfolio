@@ -14,7 +14,7 @@ const Nav = () => {
     }
     return ( 
         <nav>
-            <h1>portfolio.</h1>
+            <h1>nftportfolio.</h1>
             <ul className="desktop">
                 <li><a href="#" className={nav === '#' ? 'active' : ''} onClick={() => setNav('#')}>home</a></li>
                 <li><a href="#about" className={nav === '#about' ? 'active' : ''} onClick={() => setNav('#about')}>about</a></li>
