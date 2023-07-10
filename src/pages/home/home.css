@@ -14,6 +14,9 @@ header .flex--container div.text{
 }
 header .flex--container div.text section.intro{
     height: 80%;
+    transform: translateY(-30px);
+    opacity: 0;
+    animation: text 3s ease-in-out 1 forwards;
 }
 header .flex--container div.text section.intro h1{
     font-size: 1rem;
@@ -30,6 +33,16 @@ header .flex--container div.text section.button{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transform: translateY(-30px);
+    opacity: 0;
+    animation: text 3s ease-in-out 1 forwards;
+}
+
+@keyframes text {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 header .flex--container div.text section.button a{
     padding: .5rem;

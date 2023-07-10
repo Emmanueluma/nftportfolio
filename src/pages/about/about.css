@@ -16,9 +16,16 @@ section.about div.flex--items{
     width: 100%;
     height: 50%;
     text-align: center;
+    opacity: 0;
+    transition: all .4s;
 }
 section.about div.flex--items.photo{
     height: auto;
+    transform: translateX(-50px);
+}
+section.about div.flex--items.photo.inter{
+    opacity: 1;
+    transform: translateX(0px);
 }
 section.about div.flex--items .image--container{
     width: 90%;
@@ -47,6 +54,11 @@ section.about div.flex--items p{
 }
 section.about div.flex--items.text{
     padding: .5rem;
+    transform: translateX(-50px);
+}
+section.about div.flex--items.text.inter{
+    opacity: 1;
+    transform: translateX(0px);
 }
 @media screen and (min-width: 500px) {
     section.about div.flex--items .image--container img{

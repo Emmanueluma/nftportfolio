@@ -25,6 +25,29 @@ section.create .flex-continer article.flex-item{
     align-items: center;
     flex-direction: column;
     border: 2px solid transparent;
+    transition: all .5s;
+    opacity: 0;
+}
+section.create .flex-continer article.flex-item.one{
+    transform: translateX(-50px);
+}
+section.create .flex-continer article.flex-item.two{
+    transform: translateX(-50px);
+}
+section.create .flex-continer article.flex-item.three{
+    transform: translateX(-50px);
+}
+section.create .flex-continer article.flex-item.one.inter{
+    opacity: 1;
+    transform: translateX(0px);
+}
+section.create .flex-continer article.flex-item.two.inter{
+    opacity: 1;
+    transform: translateX(0px);
+}
+section.create .flex-continer article.flex-item.three.inter{
+    opacity: 1;
+    transform: translateX(0px);
 }
 section.create .flex-continer article.flex-item .icon{
     font-size: 2.4rem;

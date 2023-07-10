@@ -1,5 +1,4 @@
 const TemplateProfile = ( {key, image, name, random, profile, eth} ) => {
-    console.log(key, image, name, random, profile, eth)
   return (
     <article className='nft-image-container' key={key}>
         <img src={image} alt="nft-ape1" />

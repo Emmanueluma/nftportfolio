@@ -13,7 +13,6 @@ function App() {
       <main>
         <About />
         <Services />
-        <Lastest />
         <Create />
         <Contact />
       </main>

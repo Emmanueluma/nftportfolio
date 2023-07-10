@@ -22,6 +22,29 @@ section.services .flex-continer article.flex-item{
     flex-direction: column;
     background-color: var(--second-bg-color);
     border: 2px solid transparent;
+    opacity: 0;
+    transition: all .5s;
+}
+section.services .flex-continer article.flex-item.one{
+    transform: translateY(-50px);
+}
+section.services .flex-continer article.flex-item.two{
+    transform: translateY(-50px);
+}
+section.services .flex-continer article.flex-item.three{
+    transform: translateY(-50px);
+}
+section.services .flex-continer article.flex-item.one.inter{
+    opacity: 1;
+    transform: translateY(0px);
+}
+section.services .flex-continer article.flex-item.two.inter{
+    opacity: 1;
+    transform: translateY(0px);
+}
+section.services .flex-continer article.flex-item.three.inter{
+    opacity: 1;
+    transform: translateY(0px);
 }
 section.services .flex-continer article.flex-item:hover{
     border-color: var(--main-color);
