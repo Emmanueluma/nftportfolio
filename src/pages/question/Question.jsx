@@ -7,6 +7,7 @@ import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 
 import { EffectCube, Pagination } from 'swiper/modules';
+import {BsArrowRight} from 'react-icons/bs'
 
 const Question = () => {
   return (
@@ -29,10 +30,76 @@ const Question = () => {
                 pagination={true}
                 modules={[EffectCube, Pagination]}
                 >
-                <SwiperSlide className="question">Slide 1</SwiperSlide>
-                <SwiperSlide className="question">Slide 2</SwiperSlide>
-                <SwiperSlide className="question">Slide 3</SwiperSlide>
-                <SwiperSlide className="question">Slide 4</SwiperSlide>
+                <SwiperSlide className="question one">
+                    <h3>few question to getting into to our nft community</h3>
+                    <BsArrowRight className='next' />
+                </SwiperSlide>
+                <SwiperSlide className="question">
+                  <article className="q">
+                    <p>A non-fungible token is a unique digital identifier that is recorded
+                    on a blockchain, and is used to certify ownership and authenticity. 
+                    </p>
+                    <h5>is that ture?</h5>
+
+                  </article>
+                  <button className='ans'>ture</button>
+                  <button className='ans'>false</button>
+                </SwiperSlide>
+                <SwiperSlide className="question">
+                  <article className="q">
+                    <p>A non-fungible token is a unique digital identifier that is recorded
+                    on a blockchain, and is used to certify ownership and authenticity. 
+                    </p>
+                    <h5>is that ture?</h5>
+
+                  </article>
+                  <button className='ans'>ture</button>
+                  <button className='ans'>false</button>
+                </SwiperSlide>
+                <SwiperSlide className="question">
+                  <article className="q">
+                    <p>A non-fungible token is a unique digital identifier that is recorded
+                    on a blockchain, and is used to certify ownership and authenticity. 
+                    </p>
+                    <h5>is that ture?</h5>
+
+                  </article>
+                  <button className='ans'>ture</button>
+                  <button className='ans'>false</button>
+                </SwiperSlide>
+                <SwiperSlide className="question">
+                  <article className="q">
+                    <p>A non-fungible token is a unique digital identifier that is recorded
+                    on a blockchain, and is used to certify ownership and authenticity. 
+                    </p>
+                    <h5>is that ture?</h5>
+
+                  </article>
+                  <button className='ans'>ture</button>
+                  <button className='ans'>false</button>
+                </SwiperSlide>
+                <SwiperSlide className="question">
+                  <article className="q">
+                    <p>A non-fungible token is a unique digital identifier that is recorded
+                    on a blockchain, and is used to certify ownership and authenticity. 
+                    </p>
+                    <h5>is that ture?</h5>
+
+                  </article>
+                  <button className='ans'>ture</button>
+                  <button className='ans'>false</button>
+                </SwiperSlide>
+                <SwiperSlide className="question">
+                  <article className="q">
+                    <p>A non-fungible token is a unique digital identifier that is recorded
+                    on a blockchain, and is used to certify ownership and authenticity. 
+                    </p>
+                    <h5>is that ture?</h5>
+
+                  </article>
+                  <button className='ans'>ture</button>
+                  <button className='ans'>false</button>
+                </SwiperSlide>
             </Swiper>
         </div>
     </section>

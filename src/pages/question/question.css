@@ -1,5 +1,5 @@
 section.question{
-    padding: 1rem 0;
+    padding: 3rem 0;
     text-align: center;
     background-color: var(--second-bg-color);
 }
@@ -22,12 +22,41 @@ section.question .flex--container .flex--items.two{
     justify-content: center;
     align-items: center;
     /* border: 2px solid #f00; */
-    margin: 0;
 }
 section.question .flex--container .flex--items .question{
-    border: 2px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.swiper-slide{
     width: 100% !important;
+    height: 100% !important;
+}
+.swiper-pagination{
+    margin-bottom: -2rem;
+}
+section.question .flex--container .flex--items .question.one{
+    flex-direction: column;
+}
+section.question .flex--container .flex--items .question .next{
+    color: var(--main-color);
+    font-size: 2rem;
+}
+section.question .flex--container .flex--items .question .q{
+    padding: .2rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: .7rem;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+section.question .flex--container .flex--items .question .ans{
+    width: 80%;
+    height: 50px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    color: var(--bg-color);
+    font-size: 1.1rem;
 }
