@@ -2,6 +2,7 @@ section.question{
     padding: 3rem 0;
     text-align: center;
     background-color: var(--second-bg-color);
+    clip-path: polygon(0 4%, 100% 0, 100% 94%, 0% 100%);
 }
 section.question .flex--container{
     margin: 0 auto;
@@ -15,6 +16,7 @@ section.question .flex--container .flex--items{
 section.question .flex--container .flex--items img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     object-fit: cover;
 }
 section.question .flex--container .flex--items.two{
@@ -36,12 +38,23 @@ section.question .flex--container .flex--items .question{
 .swiper-pagination{
     margin-bottom: -2rem;
 }
+.swiper-pagination-bullet-active{
+    background-color: var(--main-color) !important;
+}
 section.question .flex--container .flex--items .question.one{
     flex-direction: column;
+    justify-content: space-around;
 }
-section.question .flex--container .flex--items .question .next{
+section.question .flex--container .flex--items .question h3.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    gap: 10px;
+}
+section.question .flex--container .flex--items .question h3.slider .next{
     color: var(--main-color);
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 section.question .flex--container .flex--items .question .q{
     padding: .2rem;
@@ -59,4 +72,16 @@ section.question .flex--container .flex--items .question .ans{
     margin-bottom: 1rem;
     color: var(--bg-color);
     font-size: 1.1rem;
+}
+@media screen and (min-width: 500px) {
+    section.question .flex--container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    section.question .flex--container .flex--items{
+        width: 50%;
+        height: 100%;
+    }
 }

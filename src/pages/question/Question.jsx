@@ -32,7 +32,7 @@ const Question = () => {
                 >
                 <SwiperSlide className="question one">
                     <h3>few question to getting into to our nft community</h3>
-                    <BsArrowRight className='next' />
+                    <h3 className='slider'>slide <BsArrowRight className='next' /></h3>
                 </SwiperSlide>
                 <SwiperSlide className="question">
                   <article className="q">
