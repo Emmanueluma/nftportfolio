@@ -30,7 +30,7 @@ const Contact = () => {
     const [conVisible2, setConVisible2] = useState(false);
     const [conVisible3, setConVisible3] = useState(false);
 
-    console.log(conVisible,conVisible1,conVisible2,conVisible3)
+    
     useEffect(() => {
         const conOption = {
             threshold: 0.5

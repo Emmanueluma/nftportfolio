@@ -12,7 +12,7 @@ const Services = () => {
     const s2Ref = useRef();
     const [s2Visible, setS2Visible] = useState(false);
 
-    console.log(sVisible)
+
     useEffect(() => {
         const Option = {
             threshold: 0.7

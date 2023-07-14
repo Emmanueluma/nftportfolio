@@ -30,48 +30,40 @@ section.question .flex--container .flex--items .question{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
-.swiper-slide{
-    width: 100% !important;
-    height: 100% !important;
-}
-.swiper-pagination{
-    margin-bottom: -2rem;
-}
-.swiper-pagination-bullet-active{
-    background-color: var(--main-color) !important;
+section.question .flex--container .flex--items .question .score{
+    margin-bottom: 1rem;
 }
 section.question .flex--container .flex--items .question.one{
     flex-direction: column;
     justify-content: space-around;
 }
-section.question .flex--container .flex--items .question h3.slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    gap: 10px;
+section.question .flex--container .flex--items .question.one h3{
+    margin-bottom: 1.2rem;
 }
-section.question .flex--container .flex--items .question h3.slider .next{
-    color: var(--main-color);
-    font-size: 1.3rem;
+section.question .flex--container .flex--items .question.two{
+    justify-content: space-around;
 }
-section.question .flex--container .flex--items .question .q{
-    padding: .2rem;
+section.question .flex--container .flex--items .question.two button{
     width: 100%;
-    height: auto;
-    margin-bottom: .7rem;
-    background-color: var(--bg-color);
-    border-radius: 5px;
-}
-section.question .flex--container .flex--items .question .ans{
-    width: 80%;
-    height: 50px;
-    background-color: var(--main-color);
+    height: 40px;
     border-radius: 10px;
-    margin-bottom: 1rem;
-    color: var(--bg-color);
     font-size: 1.1rem;
+    background-color: #fff;
+}
+section.question .flex--container .flex--items .question.two button.next{
+    background-color: var(--main-color);
+    color: #000;
+    font-weight: 700;
+}
+section.question .flex--container .flex--items .question.two button.next.disabled{
+    background-color: rgb(30, 137, 145);
+}
+section.question .flex--container .flex--items .question.two button.options:focus{
+    background-color: #2a2c2c;
+    color: #fff;
 }
 @media screen and (min-width: 500px) {
     section.question .flex--container{
