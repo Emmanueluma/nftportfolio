@@ -78,7 +78,7 @@ header .flex--container div.nft-photo article.image--container{
     border-radius: 30% 70% 75% 25% / 30% 30% 70% 70%;
     z-index: -1;
     box-shadow: 0 2px 6px var(--main-color);
-    border: 2px solid #00000083;
+    border: 2px solid var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,6 @@ header .flex--container div.nft-photo article.image--container img{
 @keyframes upward {
     100%{
         transform: translateY(10%);
-        border: 2px solid var(--main-color);
         box-shadow: 0 2px 10px var(--main-color);
     }
 }

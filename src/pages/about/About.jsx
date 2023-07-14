@@ -54,7 +54,7 @@ const About = () => {
                     below and be part of an inspiring community that celebrates digital art and blockchain
                     innovation.
                 </p>
-                <a href='#' className='btn'><LiaDiscord /> discord</a>
+                <a href='#question' className='btn'><LiaDiscord /> discord</a>
             </div>
         </section>
     </section>
