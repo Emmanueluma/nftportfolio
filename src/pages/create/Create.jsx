@@ -42,7 +42,7 @@ const Create = () => {
     },[])
 
   return (
-    <section className="create" id="create">
+    <section className="maxWidth create" id="create">
         <h1 className='header-h1'>create and sell your <span>NFTs</span></h1>
         <div className="flex-continer">
             <article ref={cRef} className={`flex-item one ${cVisible && "inter"}`}>

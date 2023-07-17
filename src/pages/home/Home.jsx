@@ -8,7 +8,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import Ntfimage from '../../asset/nft-image.png'
 const Home = () => {
   return (
-    <header id="home" >
+    <header id="home" className='maxWidth' >
         <Nav />
         <div className="flex--container">
           <div className='text'>

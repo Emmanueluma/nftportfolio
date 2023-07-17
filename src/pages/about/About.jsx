@@ -34,7 +34,7 @@ const About = () => {
 
 
   return (
-    <section className="about" id="about">
+    <section className="maxWidth about" id="about">
         <h1 className='header-h1'>about <span>us</span></h1>
 
         <section>

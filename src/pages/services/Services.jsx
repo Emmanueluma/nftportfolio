@@ -44,7 +44,7 @@ const Services = () => {
 
 
   return (
-    <section className="services" id="services">
+    <section className="maxWidth services" id="services">
         <h1 className='header-h1'>our <span>services</span></h1>
         <div  className="flex-continer">
             <article ref={sRef} className={`flex-item one ${sVisible && "inter"}`}>

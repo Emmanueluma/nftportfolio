@@ -66,3 +66,10 @@ body{
 .btn:hover{
     box-shadow: 0 0 8px transparent;
 }
+
+@media screen and (min-width: 1700px) {
+    .maxWidth{
+      max-width: 1700px;
+      margin: 0 auto;
+    }
+}

@@ -74,7 +74,7 @@ const Contact = () => {
 
     },[])
     return ( 
-        <section id="contact" className="contact">
+        <section id="maxWidth contact" className="contact">
         <h1 className='header-h1'>contact <span>us</span></h1>
         <div className="flex-container">
             <div className="flex-item one ">

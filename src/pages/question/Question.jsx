@@ -13,7 +13,7 @@ const Question = () => {
   const [quiz, setQuiz] = useState('menu');
   const [score, setScore] = useState(0);
   return (
-    <section id="question" className="question">
+    <section id="question" className="maxWidth question">
     <h1 className='header-h1'>join <span>community</span></h1>
         <div className="flex--container">
             <div className="flex--items">
