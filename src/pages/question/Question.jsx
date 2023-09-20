@@ -1,17 +1,12 @@
 import './question.css'
 import QuestionImg from '../../asset/question.jpg';
-import Menu from '../component/Menu'
-import { useState } from 'react';
-import Quiz from '../component/Quiz';
-import Finish from '../component/Finish';
+
 
 
 
 
 
 const Question = () => {
-  const [quiz, setQuiz] = useState('menu');
-  const [score, setScore] = useState(0);
   return (
     <section id="question" className="maxWidth question">
     <h1 className='header-h1'>join <span>community</span></h1>
@@ -21,9 +16,39 @@ const Question = () => {
             </div>
             <div
             className="flex--items two">
-                {quiz === 'menu' && <Menu setquiz={setQuiz}  />}
-                {quiz === 'quiz' && <Quiz score={score} setScore={setScore} setquiz={setQuiz}/>}
-                {quiz === 'finish' && <Finish score={score} setScore={setScore} setquiz={setQuiz} />}
+              <h3>Fill the form below to join us.</h3>
+              <form>
+                <label>
+                  Twitter Handle:
+                  <input type="text" className='st'  placeholder='*' required/>
+                </label>
+
+                <label>
+                  Discord id:
+                  <input type="text" className='st' placeholder='*' required/>
+                </label>
+
+                <label >
+                  Level of experience in web3:
+                  <input type="text" className='st' placeholder='*' required/>
+                </label>
+
+                <label >
+                  How did you get to know about Dinero:
+                  <input type="text" className='st' placeholder='*' required/>
+                </label>
+
+                <label >
+                  Why do you want be a part of Dinero:
+                  <input type="text" className='st' placeholder='*' required/>
+                </label>
+
+                <label >
+                  How do you intend to contribute to the growth and development of Dinero:
+                  <textarea className='st' placeholder='*' required/>
+                </label>
+                <button>send</button>
+              </form>
             </div> 
         </div>
     </section>

@@ -1,6 +1,5 @@
 import './about.css'
 import Discord from '../../asset/discord.png'
-import {LiaDiscord} from 'react-icons/lia'
 import { useRef, useState, useEffect } from 'react';
 const About = () => {
 
@@ -54,7 +53,6 @@ const About = () => {
                     below and be part of an inspiring community that celebrates digital art and blockchain
                     innovation.
                 </p>
-                <a href='#question' className='btn'><LiaDiscord /> discord</a>
             </div>
         </section>
     </section>

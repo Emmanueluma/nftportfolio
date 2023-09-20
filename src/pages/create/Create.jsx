@@ -1,75 +1,136 @@
 import './create.css'
-import {BsWallet} from 'react-icons/bs'
-import {TbFileUpload} from 'react-icons/tb'
-import { GoTasklist }from 'react-icons/go'
-import { useState, useEffect, useRef} from 'react'
+import img1 from '../../asset/item1.jpg'
+import img2 from '../../asset/item2.jpg'
+import img3 from '../../asset/item3.jpg'
+import img4 from '../../asset/item4.jpg'
+import img5 from '../../asset/item5.jpg'
+import img6 from '../../asset/item6.jpg'
+import img7 from '../../asset/item7.jpg'
+import img8 from '../../asset/item8.jpg'
+import img9 from '../../asset/item9.jpg'
+import img10 from '../../asset/item10.jpg'
+import img11 from '../../asset/item11.jpg'
+import img12 from '../../asset/item12.jpg'
+import img13 from '../../asset/item13.jpg'
+import img14 from '../../asset/item14.jpg'
+import img15 from '../../asset/item15.jpg'
+import img16 from '../../asset/item16.jpg'
+import img17 from '../../asset/item17.jpg'
+import img18 from '../../asset/item18.jpg'
+import img19 from '../../asset/item19.jpg'
+import img20 from '../../asset/item20.jpg'
+import img21 from '../../asset/item21.jpg'
+import img22 from '../../asset/item22.jpg'
+import img23 from '../../asset/item23.jpg'
 
 const Create = () => {
-    const cRef = useRef();
-    const [cVisible, setCVisible] = useState(false);
-    const c1Ref = useRef();
-    const [c1Visible, setC1Visible] = useState(false);
-    const c2Ref = useRef();
-    const [c2Visible, setC2Visible] = useState(false);
-
-    useEffect(() => {
-        const Option = {
-            threshold: 0.7
-        }
-        
-        const cObserver = new IntersectionObserver((entry, cObserver)=> {
-            if(entry[0].isIntersecting === true){
-                setCVisible(entry[0].isIntersecting);
-                cObserver.unobserve(cRef.current)
-            }
-        }, Option)
-        cObserver.observe(cRef.current)
-        const c1Observer = new IntersectionObserver((entry, c1Observer)=> {
-            if(entry[0].isIntersecting === true){
-                setC1Visible(entry[0].isIntersecting);
-                c1Observer.unobserve(c1Ref.current)
-            }
-        }, Option)
-        c1Observer.observe(c1Ref.current)
-        const c2Observer = new IntersectionObserver((entry, c2Observer)=> {
-            if(entry[0].isIntersecting === true){
-                setC2Visible(entry[0].isIntersecting);
-                c2Observer.unobserve(c2Ref.current)
-            }
-        }, Option)
-        c2Observer.observe(c2Ref.current)
-
-    },[])
-
+    const data = [
+        {
+            id: 1,
+            img: img1
+        },
+        {
+            id: 2,
+            img: img2
+        },
+        {
+            id: 3,
+            img: img3
+        },
+        {
+            id: 4,
+            img: img4
+        },
+        {
+            id: 5,
+            img: img5
+        },
+        {
+            id: 6,
+            img: img6
+        },
+        {
+            id: 7,
+            img: img7
+        },
+        {
+            id: 8,
+            img: img8
+        },
+        {
+            id: 9,
+            img: img9
+        },
+        {
+            id: 10,
+            img: img10
+        },
+        {
+            id: 11,
+            img: img11
+        },
+        {
+            id: 12,
+            img: img12
+        },
+        {
+            id: 13,
+            img: img13
+        },
+        {
+            id: 14,
+            img: img14
+        },
+        {
+            id: 15,
+            img: img15
+        },
+        {
+            id: 16,
+            img: img16
+        },
+        {
+            id: 17,
+            img: img17
+        },
+        {
+            id: 18,
+            img: img18
+        },
+        {
+            id: 19,
+            img: img19
+        },
+        {
+            id: 20,
+            img: img20
+        },
+        {
+            id: 21,
+            img: img21
+        },
+        {
+            id: 22,
+            img: img22
+        },
+        {
+            id: 23,
+            img: img23
+        },
+    ]
   return (
     <section className="maxWidth create" id="create">
-        <h1 className='header-h1'>create and sell your <span>NFTs</span></h1>
+        <h1 className='header-h1'>collaborations</h1>
         <div className="flex-continer">
-            <article ref={cRef} className={`flex-item one ${cVisible && "inter"}`}>
-                <BsWallet className='icon'/>
-                <h3>set up your wallet</h3>
-                <p>
-                    once you've set up your wallet of choice,
-                    connect it to OpenSea by clicking the wallet icon in 
-                    the top right corner. learn about the wallet we support
-                </p>
-            </article>
-            <article ref={c1Ref} className={`flex-item one ${c1Visible && "inter"}`}>
-                <TbFileUpload className='icon'/>
-                <h3>Upload & create collection</h3>
-                <p>
-                    upload your work then click my collections and set up your collection
-                    , add social links, a description, profile & banner images, and set a secondary sales fee.
-                </p>
-            </article>
-            <article ref={c2Ref} className={`flex-item one ${c2Visible && "inter"}`}>
-                <GoTasklist className='icon'/>
-                <h3>list them for sale</h3>
-                <p>
-                    choose between auctions, fiwed-price listings, and declining-price listings, you choose how you
-                    want your NFTs, and we help you sell them
-                </p>
-            </article>
+                {
+                    data.map(item => {
+                        return(
+                            <article key={item.id}>
+                                <img  src={item.img} alt={item.id} />
+                            </article>
+                        )
+                    })
+                }
         </div>
     </section>
   )

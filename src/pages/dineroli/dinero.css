@@ -1,0 +1,27 @@
+section.dineroli{
+    padding: 1rem  0 0 2rem;
+}
+section.dineroli .back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 6000;
+}
+section.dineroli h1{
+    color: var(--main-color);
+}
+section.dineroli article{
+    padding-left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+section.dineroli article a{
+    color: #ffffffb4;
+}

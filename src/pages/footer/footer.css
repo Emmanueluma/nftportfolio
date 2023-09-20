@@ -22,9 +22,44 @@ footer a.a{
     font-size: 1.8rem;
     color: var(--main-color);
 }
+section.button{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+section.button a{
+    padding: .5rem;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+section.button a .icons{
+    color: var(--main-color);
+    font-size: 1rem;
+    transition: all .2s;
+}
+section.button a:hover{
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color) ;
+}
+section.button a:hover .icons{
+    color: var(--bg-color);
+}
+
+
+
+
 @media screen and (max-width: 538px) {
     footer{
-        padding: 3rem 0;
+        padding: 3rem;
+        height: auto;
+        justify-content: space-around;
         flex-direction: column-reverse;
+        gap: 20px;
     }
 }
