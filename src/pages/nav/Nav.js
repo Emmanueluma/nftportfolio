@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { BiMenuAltRight } from 'react-icons/bi'
 import {IoMdClose} from 'react-icons/io'
 import './nav.css'
-import logo from '../../asset/Dinero black.jpg'
+import logo from '../../asset/Dinero_black-removebg-preview.png'
 import {Link} from 'react-router-dom'
 
 
@@ -36,7 +36,7 @@ const Nav = () => {
                     <li><a href="#about" className={nav === '#about' ? 'active' : ''} onClick={() => path('#about')}>about</a></li>
                     <li><a href="#services" className={nav === '#services' ? 'active' : ''} onClick={() => path('#services')}>Features</a></li>
                     <li><Link to='dineroli'>Library</Link></li>
-                    <li><a href="#Partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => path('#partnerships')}>partnerships</a></li>
+                    <li><a href="#partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => path('#partnerships')}>partnerships</a></li>
                     <li><a href="#question" className={nav === '#question' ? 'active' : ''} onClick={() => path('#question')}>join</a></li>
                 </ul>
             </div>
