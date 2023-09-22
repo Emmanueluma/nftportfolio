@@ -26,8 +26,8 @@ const Nav = () => {
                 <li><a href="#about" className={nav === '#about' ? 'active' : ''} onClick={() => setNav('#about')}>about</a></li>
                 <li><a href="#services" className={nav === '#services' ? 'active' : ''} onClick={() => setNav('#services')}>Features</a></li>
                 <li><Link to='dineroli'>Library</Link></li>
-                <li><a href="#partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => setNav('#partnerships')}>partnerships</a></li>
                 <li><a href="#question" className={nav === '#question' ? 'active' : ''} onClick={() => setNav('#question')}>join</a></li>
+                <li><a href="#partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => setNav('#partnerships')}>partnerships</a></li>
             </ul>
             <button onClick={toggleNav} className="menu">{ displayNav == false ? <BiMenuAltRight /> : <IoMdClose /> }</button>
             <div className={`phone--container ${displayNav && 'active'}`} >
@@ -36,8 +36,8 @@ const Nav = () => {
                     <li><a href="#about" className={nav === '#about' ? 'active' : ''} onClick={() => path('#about')}>about</a></li>
                     <li><a href="#services" className={nav === '#services' ? 'active' : ''} onClick={() => path('#services')}>Features</a></li>
                     <li><Link to='dineroli'>Library</Link></li>
-                    <li><a href="#partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => path('#partnerships')}>partnerships</a></li>
                     <li><a href="#question" className={nav === '#question' ? 'active' : ''} onClick={() => path('#question')}>join</a></li>
+                    <li><a href="#partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => path('#partnerships')}>partnerships</a></li>
                 </ul>
             </div>
         </nav>
