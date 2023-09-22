@@ -47,7 +47,7 @@ const Home = () => {
             </section> */}
           </div>
           <section className={isOpened ? `controller` : `controller active`}>
-            <audio id="myAudio">
+            <audio id="myAudio" loop>
               <source src={sound} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>

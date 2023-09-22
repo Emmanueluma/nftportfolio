@@ -12,6 +12,12 @@ section.path article{
     flex-direction: column;
     margin: 0 auto;
     padding: 0 1rem;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+section.path article.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
 section.path article:hover{
     border-color: var(--main-color);

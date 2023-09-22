@@ -4,6 +4,7 @@ import {MdOutlineEmail} from 'react-icons/md'
 import {AiOutlineInstagram} from 'react-icons/ai'
 import {FaTwitter} from 'react-icons/fa'
 import {TbNeedleThread} from 'react-icons/tb'
+import {FaYoutube} from 'react-icons/fa'
  
 
 const Footer = () => {
@@ -15,6 +16,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/direct/t/17848597500009533" target="_blank" rel="noopener noreferrer"><AiOutlineInstagram className='icons' /></a>
             <a href="https://twitter.com/Dineroxyz" target="_blank" rel="noopener noreferrer"><FaTwitter className='icons' /></a>
             <a href="https://www.threads.net/@dineroxyz" target="_blank" rel="noopener noreferrer"><TbNeedleThread className='icons' /></a>
+            <a href="https://www.youtube.com/@Dineroxyz" target="_blank" rel="noopener noreferrer"><FaYoutube className='icons' /></a>
             </section>
             <a className='a' href="#home"><BsFillArrowUpSquareFill /></a>
         </footer>

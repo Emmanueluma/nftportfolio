@@ -1,5 +1,4 @@
 import './about.css'
-import Discord from '../../asset/discord.png'
 import {FaEthereum} from 'react-icons/fa'
 import { useRef, useState, useEffect } from 'react';
 const About = () => {
@@ -41,7 +40,6 @@ const About = () => {
             <div ref={photoRef} className={`flex--items photo ${photoVisible && "inter"}`}>
                 <div className='nft-photo'>
                     <article className="image--container">
-                    {/* <img src={Discord} alt="discord-image" /> */}
                     <FaEthereum className='logo' />
                     </article>
                 </div>
