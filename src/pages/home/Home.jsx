@@ -1,36 +1,31 @@
 import './home.css'
 import Nav from '../nav/Nav'
-import {BiLogoFacebook} from 'react-icons/bi'
-import {BiLogoTwitter} from 'react-icons/bi'
-import {BiLogoInstagram} from 'react-icons/bi'
-import {BiLogoLinkedin} from 'react-icons/bi'
+import {BsPlus} from 'react-icons/bs'
+import {BsPlayFill} from 'react-icons/bs'
+import {BiMinus} from 'react-icons/bi'
+import {BiPause} from 'react-icons/bi'
 import { Typewriter } from 'react-simple-typewriter'
-import Ntfimage from '../../asset/nft-image.png'
 import sound from '../../asset/sound.mp3'
 import { useRef, useState } from 'react'
-import {BsPlayFill} from 'react-icons/bs'
-import {BsPauseFill} from 'react-icons/bs'
 
 const Home = () => {
-  const [play, setPlay] = useState(false);
-  const ocean = useRef();
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isOpened, setIsOpended] = useState(true);
 
-  const toggleSound = () => {
-    if(play) {
-      ocean.current?.pause();
-      setPlay(prev => !prev);
+  const togglePlayPause = () => {
+    const audioElement = document.getElementById('myAudio');
+    if (isPlaying) {
+      audioElement.pause();
     } else {
-      ocean.current?.play();
-      setPlay(prev => !prev);
+      audioElement.play();
     }
-  }
+    setIsPlaying(!isPlaying);
+  };
   
   return (
     <header id="home" className='maxWidth' >
         <Nav />
         <div className="flex--container">
-
-          <audio ref={ocean} autoPlay src={sound}/>
           <div className='text'>
             <section className="intro">
               <h1>
@@ -45,17 +40,36 @@ const Home = () => {
                   />
                 </span>
               </h1>
-              <p>a synergy of ardent builder, alphas and gamers in web3</p>
+              <p>a synergy of ardent builders, alphas and gamers in web3</p>
             </section>
-            <section className="btnn">
+            {/* <section className="btnn">
             {<button onClick={() => toggleSound()}>{play ? <BsPauseFill className='ctrl'/>: <BsPlayFill className='ctrl'/>}</button>}
-            </section>
+            </section> */}
           </div>
-          <div className='nft-photo'>
-            <article className="image--container">
-              <img src={Ntfimage} alt="nft-image" />
-            </article>
+          <section className={isOpened ? `controller` : `controller active`}>
+            <audio id="myAudio">
+              <source src={sound} type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          <div className="contain">
+            <div className="minmax" onClick={() => setIsOpended(prev => !prev)}>{isOpened? <BsPlus /> : <BiMinus />}</div>
+            <div onClick={togglePlayPause} className={isPlaying ? "player a": "player"}>
+              <span className='e'></span>
+              <span className='e1'></span>
+              <span className='e2'></span>
+              <span className='e3'></span>
+              <span className='e4'></span>
+              <span className='e5'></span>
+            </div>
+            <div className="name">
+              <h4>dinero</h4>
+              <p>dinero audio</p>
+            </div>
+            <div className="playbtn" onClick={togglePlayPause}>
+              {isPlaying ? <BiPause className='playStop' /> : <BsPlayFill className='playStop' />}
+            </div>
           </div>
+          </section>
         </div>
     </header>
   )

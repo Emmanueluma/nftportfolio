@@ -1,15 +1,147 @@
 header{
     height: 100vh;
+    background-image: url('../../asset/DineroHome.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header .flex--container{
     height: calc(100% - 50px);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
-header .flex--container div.text{
+header .flex--container div{
+    width: auto;
+}
+header .flex--container div section.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header .flex--container div section.intro h1{
+    font-size: 2rem;
+}
+header .flex--container div section.intro h1 span{
+    color: var(--main-color);
+}
+header .flex--container div section.intro p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #ffffffb4;
+}
+header .flex--container section.controller{
+    background-color: #464545;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    left: 30px;
+    bottom: 90px;
+    border-radius: 5px;
+    z-index: 100;
+}
+header .flex--container section.controller.active{
+    width: 200px;
+}
+header .flex--container section.controller div.contain{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .flex--container section.controller div.contain div{
+    height: 100%;
+}
+header .flex--container section.controller div.contain .minmax{
+    background-color: #464545;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    box-shadow: 0 0 4px #ffffff4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .flex--container section.controller div.contain .player{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+}
+header .flex--container section.controller div.contain .player span{
+    width: .3px;
+    height: 3px;
+    background-color: #fff;
+}
+header .flex--container section.controller div.contain .player.a span{
+    background-color: rgb(241, 35, 35);
+    animation: size 1s ease-in-out .2s infinite alternate;
+}
+header .flex--container section.controller div.contain .player.a span.e1{
+    animation-delay: .6s;
+}
+header .flex--container section.controller div.contain .player.a span.e2{
+    animation-delay: .9s;
+}
+header .flex--container section.controller div.contain .player.a span.e3{
+    animation-delay: .8s;
+}
+header .flex--container section.controller div.contain .player.a span.e4{
+    animation-delay: 1.3s;
+}
+header .flex--container section.controller div.contain .player.a span.e5{
+    animation-delay: 1.7s;
+}
+@keyframes size {
+    100%{
+        height: 20px;
+    }
+}
+header .flex--container section.controller div.contain .name{
+    display: none;
+}
+header .flex--container section.controller.active div.contain .name{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+header .flex--container section.controller.active div.contain .name h4{
+    font-size: .9rem;
+}
+header .flex--container section.controller.active div.contain .name p{
+    font-size: .7rem;
+}
+header .flex--container section.controller div.contain .playbtn{
+    display: none;
+}
+header .flex--container section.controller.active div.contain .playbtn{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .flex--container section.controller.active div.contain .playbtn .playStop{
+    font-size: 1.2rem;
+}
+/* header .flex--container div.text{
     padding-left: 1rem;
     height: 30%;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 header .flex--container div.text section.intro{
@@ -20,6 +152,7 @@ header .flex--container div.text section.intro{
 }
 header .flex--container div.text section.intro h1{
     font-size: 2rem;
+    color: #fff;
 }
 header .flex--container div.text section.intro h1 span{
     color: var(--main-color);
@@ -70,13 +203,14 @@ header .flex--container div.nft-photo{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 header .flex--container div.nft-photo article.image--container{
     width: 70%;
     height: 70%;
     background: linear-gradient(to top right, var(--second-bg-color) , var(--main-color));
     border-radius: 30% 70% 75% 25% / 30% 30% 70% 70%;
-    z-index: -1;
+    z-index: 100;
     box-shadow: 0 2px 6px var(--main-color);
     border: 2px solid var(--main-color);
     display: flex;
@@ -108,7 +242,7 @@ header .flex--container div.text .btnn{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* opacity: 0; */
+    opacity: 0;
 }
 header .flex--container div.text .btnn button{
     background-color: transparent;
@@ -187,3 +321,4 @@ header .flex--container div.text .btnn .ctrl{
         width: 400px;
     }
 }
+ */

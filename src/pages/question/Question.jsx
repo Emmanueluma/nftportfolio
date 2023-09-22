@@ -1,5 +1,6 @@
 import './question.css'
 import QuestionImg from '../../asset/question.jpg';
+import {Link} from 'react-router-dom'
 
 
 
@@ -17,38 +18,7 @@ const Question = () => {
             <div
             className="flex--items two">
               <h3>Fill the form below to join us.</h3>
-              <form>
-                <label>
-                  Twitter Handle:
-                  <input type="text" className='st'  placeholder='*' required/>
-                </label>
-
-                <label>
-                  Discord id:
-                  <input type="text" className='st' placeholder='*' required/>
-                </label>
-
-                <label >
-                  Level of experience in web3:
-                  <input type="text" className='st' placeholder='*' required/>
-                </label>
-
-                <label >
-                  How did you get to know about Dinero:
-                  <input type="text" className='st' placeholder='*' required/>
-                </label>
-
-                <label >
-                  Why do you want be a part of Dinero:
-                  <input type="text" className='st' placeholder='*' required/>
-                </label>
-
-                <label >
-                  How do you intend to contribute to the growth and development of Dinero:
-                  <textarea className='st' placeholder='*' required/>
-                </label>
-                <button>send</button>
-              </form>
+              <Link to='/form' className='btn'>start</Link>
             </div> 
         </div>
     </section>

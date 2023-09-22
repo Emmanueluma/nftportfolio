@@ -1,4 +1,8 @@
 import './create.css'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import img1 from '../../asset/item1.jpg'
 import img2 from '../../asset/item2.jpg'
 import img3 from '../../asset/item3.jpg'
@@ -24,6 +28,16 @@ import img22 from '../../asset/item22.jpg'
 import img23 from '../../asset/item23.jpg'
 
 const Create = () => {
+    const settings = {
+        autoplay: true,
+        autoplaySpeed: 1000, // Set the duration between slides (in milliseconds)
+        dots: true, // Show navigation dots
+        infinite: true, // Loop through images
+        speed: 500, // Transition speed (in milliseconds)
+        slidesToShow: 2, // Number of slides to show at a time
+        slidesToScroll: 1, // Number of slides to scroll at a time
+    };
+
     const data = [
         {
             id: 1,
@@ -121,7 +135,7 @@ const Create = () => {
   return (
     <section className="maxWidth create" id="create">
         <h1 className='header-h1'>collaborations</h1>
-        <div className="flex-continer">
+        {/* <div className="flex-continer">
                 {
                     data.map(item => {
                         return(
@@ -131,7 +145,16 @@ const Create = () => {
                         )
                     })
                 }
-        </div>
+        </div> */}
+        <Slider className="flex-continer" {...settings}>
+            {data.map(item => {
+                return(
+                    <article key={item.id}>
+                        <img  src={item.img} alt={item.id} />
+                    </article>
+                )
+            })}
+      </Slider>
     </section>
   )
 }

@@ -1,7 +1,11 @@
 import './services.css'
-import {FaTeamspeak} from 'react-icons/fa'
-import {SiMarketo} from 'react-icons/si'
 import {MdCastForEducation} from 'react-icons/md'
+import {FaEthereum} from 'react-icons/fa'
+import {GiWhiteBook} from 'react-icons/gi'
+import {GiNetworkBars} from 'react-icons/gi'
+import {RiVipCrown2Fill} from 'react-icons/ri'
+import {MdGamepad} from 'react-icons/md'
+import {LiaAccessibleIcon} from 'react-icons/lia'
 import { useState, useEffect, useRef} from 'react'
 const Services = () => {
 
@@ -45,34 +49,35 @@ const Services = () => {
 
   return (
     <section className="maxWidth services" id="services">
-        <h1 className='header-h1'>our <span>services</span></h1>
+        <h1 className='header-h1'>Feature<span>s</span></h1>
         <div  className="flex-continer">
             <article ref={sRef} className={`flex-item one ${sVisible && "inter"}`}>
-                <SiMarketo className='icon'/>
-                <h3>Marketplace Access</h3>
-                <p>
-                    our community provides access to 
-                    curated marketplaces, enabling creators to showcase and
-                    sell their digital assets.
-                </p>
+                <MdCastForEducation className='icon'/>
+                <h3>Web3 Education</h3>
             </article>
             <article ref={s1Ref} className={`flex-item two ${s1Visible && "inter"}`}>
-                <MdCastForEducation className='icon'/>
-                <h3>Education & Support</h3>
-                <p>
-                    we offer educational 
-                    resources, tutorials, and support to help navigate 
-                    the complex world of NFTs
-                </p>
+                <FaEthereum className='icon' />
+                <h3>Crypto & Nft calls</h3>
             </article>
             <article ref={s2Ref} className={`flex-item three ${s2Visible && "inter"}`}>
-                <FaTeamspeak className='icon'/>
-                <h3>Collaboration Opportunities</h3>
-                <p>
-                    our Members can connect, collaborate, 
-                    and explore partnerships with like-minded individuals for mutual 
-                    growth and creativity
-                </p>
+                <GiWhiteBook className='icon'/>
+                <h3>Whitelist Opportunities</h3>
+            </article>
+            <article ref={s2Ref} className={`flex-item three ${s2Visible && "inter"}`}>
+                <GiNetworkBars className='icon' />
+                <h3>Networking</h3>
+            </article>
+            <article ref={s2Ref} className={`flex-item three ${s2Visible && "inter"}`}>
+                <RiVipCrown2Fill className='icon' />
+                <h3>Exclusive partnerships</h3>
+            </article>
+            <article ref={s2Ref} className={`flex-item three ${s2Visible && "inter"}`}>
+                <MdGamepad className='icon' />
+                <h3>Events and Games</h3>
+            </article>
+            <article ref={s2Ref} className={`flex-item three ${s2Visible && "inter"}`}>
+                <LiaAccessibleIcon className='icon' />
+                <h3>Curated/Early Alphas</h3>
             </article>
         </div>
     </section>
@@ -80,3 +85,11 @@ const Services = () => {
 }
 
 export default Services
+
+
+/* 
+
+
+
+
+ */

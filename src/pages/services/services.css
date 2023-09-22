@@ -2,6 +2,9 @@ section.services{
     text-align: center;
     padding: 2rem 0;
 }
+section.services h1 span{
+    text-transform: lowercase;
+}
 section.services .flex-continer{
     width: 90%;
     margin: 0 auto;
@@ -13,9 +16,9 @@ section.services .flex-continer{
 }
 section.services .flex-continer article.flex-item{
     padding: 0 10px;
-    width: 320px;
-    height: 320px;
-    border-radius: 30px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,9 +59,23 @@ section.services .flex-continer article.flex-item .icon{
     color: var(--main-color);
 }
 section.services .flex-continer article.flex-item h3{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 section.services .flex-continer article.flex-item p{
     font-size: 1rem;
     color: #ffffffbb;
+}
+@media screen and (max-width: 477px) {
+    section.services .flex-continer{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 150px);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    section.services .flex-continer article.flex-item{
+        width: 100%;
+        height: 100%;
+    }
 }

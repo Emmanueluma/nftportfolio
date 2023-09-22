@@ -1,5 +1,6 @@
 import './about.css'
 import Discord from '../../asset/discord.png'
+import {FaEthereum} from 'react-icons/fa'
 import { useRef, useState, useEffect } from 'react';
 const About = () => {
 
@@ -40,18 +41,15 @@ const About = () => {
             <div ref={photoRef} className={`flex--items photo ${photoVisible && "inter"}`}>
                 <div className='nft-photo'>
                     <article className="image--container">
-                    <img src={Discord} alt="discord-image" />
+                    {/* <img src={Discord} alt="discord-image" /> */}
+                    <FaEthereum className='logo' />
                     </article>
                 </div>
             </div>
             <div ref={photo1Ref} className={`flex--items text ${photo1Visible && "inter"}`}>
-                <h3>empowering NFT creativity</h3>
                 <p>
-                    Join our vibrant NFT community on Discord, where passionate creators, 
-                    collectors, and enthusiasts come together. Engage in lively discussions,
-                    share insights, and stay up-to-date with the latest trends. Click the button
-                    below and be part of an inspiring community that celebrates digital art and blockchain
-                    innovation.
+                We are a Synergy Of Ardent Builder, Alphas And Gamers In Web3.
+DINERO is on a mission to empower, educate, and connect Web3 explorers. We are dedicated to providing a safe and inclusive space where our members feel valued, supported, and part of a global movement. Through networking opportunities, educational resources, and a commitment to personal and collective growth, we aim to be the trusted home for NFT enthusiasts and Web3 explorers.
                 </p>
             </div>
         </section>
