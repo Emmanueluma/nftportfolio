@@ -19,9 +19,9 @@ section.path article.active{
     transform: translateY(0px);
     opacity: 1;
 }
-section.path article:hover{
+/* section.path article:hover{
     border-color: var(--main-color);
-}
+} */
 section.path article .btnw{
     background-color: rgba(0, 238, 255, 0.473);
     border: 2px solid var(--main-color);
