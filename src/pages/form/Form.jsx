@@ -4,8 +4,9 @@ import './form.css'
 import img from '../../asset/Dinero white.JPEG.jpg'
 import {BiLoaderAlt} from 'react-icons/bi'
 import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
-const Form = () => {
+const Form = ({setSent}) => {
 
   const form = useRef();
   const [formdata, setformdata] = useState({
@@ -25,10 +26,10 @@ const Form = () => {
         }
     })
  } 
- console.log(formdata)
+ const nav = useNavigate();
   const sendEmail = (e) => {
     e.preventDefault();
-
+    
     emailjs.sendForm('service_ot2o7de', 'template_xkzd8rz', form.current, 'n1_R7vM9hWLeE8Pna')
       .then((result) => {
           console.log(result.text);

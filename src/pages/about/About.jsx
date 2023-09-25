@@ -46,7 +46,7 @@ const About = () => {
             </div>
             <div ref={photo1Ref} className={`flex--items text ${photo1Visible && "inter"}`}>
                 <p>
-                We are a Synergy Of Ardent Builder, Alphas And Gamers In Web3.
+                We are a Synergy Of Ardent Builders, Alphas And Gamers In Web3.
 DINERO is on a mission to empower, educate, and connect Web3 explorers. We are dedicated to providing a safe and inclusive space where our members feel valued, supported, and part of a global movement. Through networking opportunities, educational resources, and a commitment to personal and collective growth, we aim to be the trusted home for NFT enthusiasts and Web3 explorers.
                 </p>
             </div>
