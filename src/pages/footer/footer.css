@@ -37,3 +37,11 @@ footer.maxWidth .box-border a:hover{
 footer.maxWidth .box-border a .icons{
     color: var(--main-color);
 }
+@media screen and (max-width: 650px) {
+    footer.maxWidth{
+        padding-left: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

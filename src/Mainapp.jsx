@@ -6,7 +6,6 @@ import Create from './pages/create/Create';
 import Footer from './pages/footer/Footer'; 
 import Question from './pages/question/Question';
 import Partnerships from './pages/partnerships/Partnerships';
-
 const Mainapp = () => {
   return (
     <>

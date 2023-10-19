@@ -31,7 +31,7 @@ const Nav = () => {
                 <li><a href="#partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => setNav('#partnerships')}>partnerships</a></li>
             </ul>
             <Link className="linkform" to='/form'>join <WiDirectionUpRight className="icon" /></Link>
-            <button onClick={toggleNav} className="menu">{ displayNav == false ? <BiMenuAltRight /> : <IoMdClose /> }</button>
+            <button onClick={toggleNav} className="menu">{ displayNav == false ? <BiMenuAltRight />  : <IoMdClose /> } </button>
             <div className={`phone--container ${displayNav && 'active'}`} >
                 <ul className={`phone ${displayNav && 'active'}`}>
                     <li><a href="#" className={nav === '#' ? 'active' : ''} onClick={() => path('#')}>home</a></li>

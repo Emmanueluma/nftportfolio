@@ -15,17 +15,22 @@ section.about section{
     align-items: center;
 }
 section.about section .flex--items {
-    width: 600px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transform: translateY(50px);
+    opacity: 0;
+}
+section.about section .flex--items.inter{
+    transform: translateY(0px);
+    opacity: 1;
 }
 section.about section .flex--items div.links{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px soldi red;
     gap: 30px;
     margin-top: 1rem;
 }

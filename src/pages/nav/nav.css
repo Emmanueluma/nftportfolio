@@ -10,9 +10,17 @@ nav{
     left: 0;
     background-color: #000;
     z-index: 9999999999999;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: nav 1s ease-in-out .7s forwards ;
+}
+@keyframes nav {
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 nav div.img{
-    /* border: 2px solid #fff; */
     width: 150px;
     height: 70px;
     position: relative;
@@ -50,79 +58,65 @@ nav h1{
 }
 nav .menu{
     display: none;
-    padding: .6rem;
     border-radius: 15px;
     color: #fff;
     background-color: var(--bg-color);
-    /* box-shadow: 0 0 7px #fff; */
     position: fixed;
     top: .8rem;
     right: 1rem;
+    font-size: 2rem;
 }
-nav div.phone--container{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 0px;
-}
-nav div.phone--container.active{
-    width: 100%;
-}
-nav div.phone--container ul.phone{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    background-color: #000000be;
-    z-index: 99;
-    flex-direction: column;
-}
-nav div.phone--container ul.phone.active{
-    width: 100%;
-}
-nav div.phone--container ul.phone li a{
+nav .phone--container{
     display: none;
 }
-nav div.phone--container ul.phone.active li a{
-    display: block;
-    font-size: 1.3rem;
-}
-@media screen and (min-width: 501px) {
+@media screen and (max-width: 1000px) {
     nav{
-        height: 70px;
-    }
-    nav h1{
-        font-size: 1.6rem;
-    }
-}
-@media screen and (max-width: 589px) {
-    body{
-        position: relative;
-    }
-    nav{
-        width: 90%;
+        justify-content: center;
+        align-items: center;
     }
     nav div.img{
-        height: 40px;
-        top: 5px;
+        display: none;
     }
-    nav div.img img{
-        height: 100%;
-    }
-    nav div.phone--container{
-        display: block;
-    }
-    nav .menu{
-        display: block;
-        font-size: 1.6rem;
-        top: 1.2rem;
-        right: 1.1rem;
-        z-index: 100;
-    }
-    nav ul.desktop{
+    .linkform{
         display: none;
     }
 }
-
+@media screen and (max-width: 544px) {
+    nav div.img{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    nav{
+        margin: 0 auto;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav .menu{
+        display: flex;
+    }
+    nav .phone--container.active{
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 60px);
+        position: fixed;
+        top: 60px;
+        left: 0;
+    }
+    nav .phone--container.active ul.phone.active {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: #000;
+        flex-direction: column;
+    }
+    nav .phone--container.active ul.phone.active a{
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    nav .phone--container.active ul.phone.active a.active{
+        color: var(--main-color);
+    }
+}

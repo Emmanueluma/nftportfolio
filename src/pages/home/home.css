@@ -27,7 +27,13 @@ header .flex--container{
     align-items: center;
     flex-direction: column;
     z-index: 2;
-
+    opacity: 0;
+    animation: container 1s ease-in-out .7s forwards;
+}
+@keyframes container {
+    100%{
+        opacity: 1;
+    }
 }
 header .flex--container .text{
     text-align: center;
@@ -40,7 +46,16 @@ header .flex--container .text p.p{
     border: 2px solid var(--main-color);
 }
 header .flex--container .text h1{
-    font-size: 7rem;
+    font-size: 2rem;
+    opacity: 0;
+    animation: header 1s ease-in-out .7s forwards ;
+    margin-bottom: 1rem;
+}
+@keyframes header {
+    100%{
+        font-size: 7rem;
+        opacity: 1;
+    }
 }
 header .flex--container .text p.pp{
     padding: 1rem;
@@ -170,4 +185,43 @@ header .flex--container section.controller.active div.contain .playbtn{
 }
 header .flex--container section.controller.active div.contain .playbtn .playStop{
     font-size: 1.2rem;
+}
+@media screen and (max-width: 922px) {
+    header .flex--container .text h1{
+        font-size: 2rem;
+        opacity: 0;
+        animation: header 1s ease-in-out .7s forwards ;
+    }
+    @keyframes header {
+        100%{
+            font-size: 5rem;
+            opacity: 1;
+        }
+    }
+}
+@media screen and (max-width: 603px) {
+    header .flex--container .text h1{
+        font-size: 2rem;
+        opacity: 0;
+        animation: header 1s ease-in-out .7s forwards ;
+    }
+    @keyframes header {
+        100%{
+            font-size: 4rem;
+            opacity: 1;
+        }
+    }
+}
+@media screen and (max-width: 569px) {
+    header .flex--container .text p.pp{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 454px) {
+    header .flex--container .text p.pp{
+        display: block;
+        width: 80%;
+        font-size: .7rem;
+        margin: 0 auto;
+    }
 }
