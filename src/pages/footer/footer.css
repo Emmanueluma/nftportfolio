@@ -44,4 +44,11 @@ footer.maxWidth .box-border a .icons{
         align-items: flex-start;
         flex-direction: column;
     }
+    footer.maxWidth .box.img{
+        width: auto;
+        height: auto;
+    }
+    footer.maxWidth .box-border{
+        width: 80%;
+    }
 }

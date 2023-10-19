@@ -27,9 +27,10 @@ const Home = () => {
         <Nav />
         <div className="flex--container">
           <div className='text'>
-              <p className='p'>DINERO</p>
-              <h1>The new smart money.</h1>
-              <p className='pp'>a synergy of ardent builders, alphas and gamers in web3</p>
+              {/* <p className='p'>DINERO</p> */}
+              {/* <h1>a synergy of ardent builders,</h1>
+              <h1>alphas and gamers in web3.</h1> */}
+              
           </div>
           <section className={isOpened ? `controller` : `controller active`}>
             <audio id="myAudio" loop>
