@@ -1,26 +1,29 @@
 import './dinero.css'
 import {Link} from 'react-router-dom'
-import {IoIosArrowBack} from 'react-icons/io'
+/* import {IoIosArrowBack} from 'react-icons/io' */
+import { Outlet } from 'react-router-dom'
 
 const Dineroli = () => {
   return (
     <section className="dineroli">
-      {/* <section className="massive--link">
+        {/* <Link className='back' to='/'><IoIosArrowBack /> back</Link> */}
+        
+      <section className="massive--link">
         <Link to='/dineroli/cryptobasic' className='link'>
           <h1>crypto basic</h1>
         </Link>
-        <Link className='link'>
+        <Link to='/dineroli/defi' className='link'>
           <h1>defi</h1>
         </Link>
-        <Link className='link'>
+        <Link to='/dineroli/nftbasic' className='link'>
           <h1>nft basic</h1>
         </Link>
-        <Link className='link'>
+        <Link to='/dineroli/originals' className='link'>
           <h1>ordinals</h1>
         </Link>
-      </section> */}
-        <Link className='back' to='/'><IoIosArrowBack /> back</Link>
-        <h1>1.0 CRYPTO BASICS</h1>
+      </section>
+      <Outlet />
+        {/* <h1>1.0 CRYPTO BASICS</h1>
         <article>
         <a href="https://g.co/kgs/b62XYh" target="_blank" rel="noopener noreferrer">1.1 What Is Cryptocurrency?</a>
         <a href="https://g.co/kgs/vsABP3" target="_blank" rel="noopener noreferrer">1.2 What is bitcoin?</a>
@@ -102,7 +105,7 @@ const Dineroli = () => {
             <a href="http://" target="_blank" rel="noopener noreferrer">4.16 Receiving inscriptions with ord wallet receive</a>
             <a href="http://" target="_blank" rel="noopener noreferrer">4.17 Ordinal Rarity</a>
             <a href="http://" target="_blank" rel="noopener noreferrer">4.18 Special Sats</a>
-        </article>
+        </article> */}
     </section>
   )
 }
