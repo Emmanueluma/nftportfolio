@@ -1,5 +1,5 @@
 section.dineroli{
-    padding: 1rem  0 0 2rem;
+    padding: 1rem;
 }
 section.dineroli .back{
     display: flex;
@@ -24,4 +24,29 @@ section.dineroli article{
 }
 section.dineroli article a{
     color: #ffffffb4;
+}
+section.dineroli section.massive--link{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: repeat(2, 49%);
+    grid-gap: 10px;
+}
+section.dineroli section.massive--link .link{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffa1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.dineroli section.massive--link .link:hover{
+    background-color: #fff;
+}
+section.dineroli section.massive--link .link h1{
+    font-size: 3rem;
+    color: #000;
+    
 }

@@ -2,97 +2,30 @@ section.about{
     clip-path: polygon(0 4%, 100% 0, 100% 94%, 0% 100%);
     width: 100%;
     height: auto;
-    background-color: var(--second-bg-color);
+    padding-bottom: 1rem;
     padding-top: 1rem;
     text-align: center;
+}
+section.about .header-h1 span{
+    text-transform: uppercase;
 }
 section.about section{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+section.about section .flex--items {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
-section.about div.flex--items{
-    width: 100%;
-    height: 50%;
-    text-align: center;
-    opacity: 0;
-    transition: all .4s;
-}
-section.about div.flex--items.photo{
-    height: auto;
-    transform: translateX(-50px);
-}
-section.about div.flex--items.photo.inter{
-    opacity: 1;
-    transform: translateX(0px);
-}
-section.about div.flex--items .image--container{
-    width: 90%;
-    height: 90%;
-    margin: 0 auto;
-}
-section.about div.flex--items .image--container .logo{
-    font-size: 10rem;
-    color: var(--main-color);
-}
-section.about div.flex--items .image--container img{
-    width: 100%;
-    height: 100%;
-    max-width: 230px;
-    max-height: 250px;
-}
-section.about div.flex--items h1{
-    font-size: 1.5rem;
-}
-section.about div.flex--items h1 span {
-    color: var(--main-color);
-}
-section.about div.flex--items h3{
-    color: #ffffffa8;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-section.about div.flex--items p{
-    margin-bottom: 1.2rem;
-}
-section.about div.flex--items.text{
-    padding: .5rem;
-    transform: translateX(-50px);
-}
-section.about div.flex--items.text.inter{
-    opacity: 1;
-    transform: translateX(0px);
-}
-@media screen and (min-width: 500px) {
-    section.about div.flex--items .image--container img{
-        max-width: 400px;
-        max-height: 400px;
-    }
-    section.about section{
-        flex-direction: row;
-    }
-    section.about div.flex--items{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    section.about div.flex--items.photo{
-        width: auto;
-        height: 100%;
-    }
-    section.about div.flex--items.text{
-        width: auto;
-        height: 100%;
-        text-align: left;
-        align-items: flex-start;
-    }
-    section.about div.flex--items.text p{
-        max-width: 650px;
-    }
-    section.about div.flex--items.text a{
-        margin: 0;
-    }
+section.about section .flex--items div.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px soldi red;
+    gap: 30px;
+    margin-top: 1rem;
 }

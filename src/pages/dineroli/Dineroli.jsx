@@ -5,6 +5,20 @@ import {IoIosArrowBack} from 'react-icons/io'
 const Dineroli = () => {
   return (
     <section className="dineroli">
+      <section className="massive--link">
+        <Link to='/dineroli/cryptobasic' className='link'>
+          <h1>crypto basic</h1>
+        </Link>
+        <Link className='link'>
+          <h1>defi</h1>
+        </Link>
+        <Link className='link'>
+          <h1>nft basic</h1>
+        </Link>
+        <Link className='link'>
+          <h1>ordinals</h1>
+        </Link>
+      </section>
         <Link className='back' to='/'><IoIosArrowBack /> back</Link>
         <h1>1.0 CRYPTO BASICS</h1>
         <article>

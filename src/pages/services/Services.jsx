@@ -91,7 +91,7 @@ const Services = () => {
 
   return (
     <section className="maxWidth services" id="services">
-        <h1 className='header-h1'>Feature<span>s</span></h1>
+        <h1 className='header-h1'>Features</h1>
         <div  className="flex-continer">
             <article ref={sRef} className={`flex-item one ${sVisible && "inter"}`}>
                 <MdCastForEducation className='icon'/>
@@ -105,19 +105,19 @@ const Services = () => {
                 <GiWhiteBook className='icon'/>
                 <h3>Whitelist Opportunities</h3>
             </article>
-            <article ref={s3Ref} className={`flex-item three ${s3Visible && "inter"}`}>
+            <article ref={s3Ref} className={`flex-item four ${s3Visible && "inter"}`}>
                 <GiNetworkBars className='icon' />
                 <h3>Networking</h3>
             </article>
-            <article ref={s4Ref} className={`flex-item three ${s4Visible && "inter"}`}>
+            <article ref={s4Ref} className={`flex-item five ${s4Visible && "inter"}`}>
                 <RiVipCrown2Fill className='icon' />
                 <h3>Exclusive partnerships</h3>
             </article>
-            <article ref={s5Ref} className={`flex-item three ${s5Visible && "inter"}`}>
+            <article ref={s5Ref} className={`flex-item six ${s5Visible && "inter"}`}>
                 <MdGamepad className='icon' />
                 <h3>Events and Games</h3>
             </article>
-            <article ref={s6Ref} className={`flex-item three ${s6Visible && "inter"}`}>
+            <article ref={s6Ref} className={`flex-item seven ${s6Visible && "inter"}`}>
                 <LiaAccessibleIcon className='icon' />
                 <h3>Curated/Early Alphas</h3>
             </article>

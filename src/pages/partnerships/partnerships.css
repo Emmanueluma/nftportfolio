@@ -1,17 +1,35 @@
 section.path{
     text-align: center;
 }
+section.path .imgcontainer{
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.path .imgcontainer .img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section.path .imgcontainer .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 section.path article{
-    width: 500px;
+    background-color: #000000ab;
+    width: 600px;
     min-height: 300px;
-    border: 2px solid var(--second-bg-color);
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    padding: .5rem 1rem;
     transform: translateY(-50px);
     opacity: 0;
 }
@@ -19,9 +37,6 @@ section.path article.active{
     transform: translateY(0px);
     opacity: 1;
 }
-/* section.path article:hover{
-    border-color: var(--main-color);
-} */
 section.path article .btnw{
     background-color: rgba(0, 238, 255, 0.473);
     border: 2px solid var(--main-color);

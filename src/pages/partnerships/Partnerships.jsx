@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './partnerships.css'
 import {WiDirectionUpRight} from 'react-icons/wi'
+import img from '../../asset/DineroHome.png'
 
 const Partnerships = () => {
   const pRef = useRef();
@@ -22,9 +23,13 @@ const Partnerships = () => {
 },[])
   return (
     <section className="path" id='partnerships'>
-    <h1 className='header-h1'>partner<span>ships</span></h1>
-
-      <article ref={pRef} className={pVisible && 'active'}>
+    <h1 className='header-h1'>partnerships</h1>
+    
+    <section className="imgcontainer">
+    <div className="img">
+      <img src={img} alt="background" />
+    </div>
+    <article ref={pRef} className={pVisible && 'active'}>
         <p>
           We support Web3 projects and founders who are bringing something 
           new and unique to the Web3 ecosystem. We have collaborated with over 
@@ -34,6 +39,9 @@ const Partnerships = () => {
         </p>
         <a href="https://twitter.com/Dineroxyz"  className='btnw' target="_blank" rel="noopener noreferrer">get in touch <WiDirectionUpRight className='logo' /></a>
       </article>
+    </section>
+
+      
 
     </section>
   )

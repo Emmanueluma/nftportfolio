@@ -10,7 +10,7 @@ import { useRef, useState } from 'react'
 
 const Home = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isOpened, setIsOpended] = useState(true);
+  const [isOpened, setIsOpended] = useState(false);
 
   const togglePlayPause = () => {
     const audioElement = document.getElementById('myAudio');
@@ -27,24 +27,9 @@ const Home = () => {
         <Nav />
         <div className="flex--container">
           <div className='text'>
-            <section className="intro">
-              <h1>
-              welcome to 
-                <span> 
-                  <Typewriter
-                      words={[' dinero']}
-                      loop={3}
-                      cursor
-                      cursorStyle='|'
-                      typeSpeed={70}
-                  />
-                </span>
-              </h1>
-              <p>a synergy of ardent builders, alphas and gamers in web3</p>
-            </section>
-            {/* <section className="btnn">
-            {<button onClick={() => toggleSound()}>{play ? <BsPauseFill className='ctrl'/>: <BsPlayFill className='ctrl'/>}</button>}
-            </section> */}
+              <p className='p'>DINERO</p>
+              <h1>The new smart money.</h1>
+              <p className='pp'>a synergy of ardent builders, alphas and gamers in web3</p>
           </div>
           <section className={isOpened ? `controller` : `controller active`}>
             <audio id="myAudio" loop>

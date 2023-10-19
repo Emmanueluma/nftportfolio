@@ -4,6 +4,7 @@ import {IoMdClose} from 'react-icons/io'
 import './nav.css'
 import logo from '../../asset/Dinero_black-removebg-preview.png'
 import {Link} from 'react-router-dom'
+import {WiDirectionUpRight} from 'react-icons/wi'
 
 
 const Nav = () => {
@@ -29,6 +30,7 @@ const Nav = () => {
                 <li><a href="#question" className={nav === '#question' ? 'active' : ''} onClick={() => setNav('#question')}>join</a></li>
                 <li><a href="#partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => setNav('#partnerships')}>partnerships</a></li>
             </ul>
+            <Link className="linkform" to='/form'>join <WiDirectionUpRight className="icon" /></Link>
             <button onClick={toggleNav} className="menu">{ displayNav == false ? <BiMenuAltRight /> : <IoMdClose /> }</button>
             <div className={`phone--container ${displayNav && 'active'}`} >
                 <ul className={`phone ${displayNav && 'active'}`}>

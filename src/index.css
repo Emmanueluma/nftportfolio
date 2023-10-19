@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -21,7 +20,7 @@
 }
 html{
   scroll-behavior: smooth;
-  /* scroll-padding-top: 5rem; */
+  scroll-padding-top: 5rem;
 }
 html::-webkit-scrollbar {
   width: .3rem;
@@ -38,14 +37,17 @@ body{
   width: 100%;
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   overflow-x: none;
 }
 .header-h1{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
   margin-bottom: 2rem;
 }
-.header-h1 span {
+.header-h1  {
+  text-transform: uppercase;
+  letter-spacing: 3px;
   color: var(--main-color);
 }
 .btn{
@@ -66,6 +68,65 @@ body{
 }
 .btn:hover{
     box-shadow: 0 0 8px transparent;
+}
+
+.linkform{
+  background-color: #fff;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #000;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.linkform .icon{
+  font-size: 1.4rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+.linkform:hover {
+  border-color: var(--main-color);
+}
+.linkform:hover .icon {
+  background-color: rgb(12, 99, 105);
+  transform: rotate(40deg);
+}
+
+.linkbtn{
+  background-color: var(--main-color);
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #000;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.linkbtn .icon{
+  font-size: 1.4rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+.linkbtn:hover {
+  border-color: #3716af;
+}
+.linkbtn:hover .icon {
+  background-color: rgb(12, 99, 105);
+  transform: rotate(40deg);
 }
 
 @media screen and (min-width: 1700px) {

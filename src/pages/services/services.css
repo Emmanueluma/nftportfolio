@@ -1,81 +1,121 @@
 section.services{
     text-align: center;
-    padding: 2rem 0;
+    height: auto;
+    padding: 1rem;
 }
 section.services h1 span{
     text-transform: lowercase;
 }
 section.services .flex-continer{
     width: 90%;
+    height: auto;
     margin: 0 auto;
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 49%);
+    grid-gap: 13px;
+    grid-template-rows: repeat(5, 300px);
 }
 section.services .flex-continer article.flex-item{
-    padding: 0 10px;
-    width: 200px;
-    height: 150px;
-    border-radius: 10px;
+    background-color: var(--second-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--second-bg-color);
-    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
     opacity: 0;
-    transition: all .5s;
-}
-section.services .flex-continer article.flex-item.one{
-    transform: translateY(-50px);
-}
-section.services .flex-continer article.flex-item.two{
-    transform: translateY(-50px);
-}
-section.services .flex-continer article.flex-item.three{
-    transform: translateY(-50px);
-}
-section.services .flex-continer article.flex-item.one.inter{
-    opacity: 1;
-    transform: translateY(0px);
-}
-section.services .flex-continer article.flex-item.two.inter{
-    opacity: 1;
-    transform: translateY(0px);
-}
-section.services .flex-continer article.flex-item.three.inter{
-    opacity: 1;
-    transform: translateY(0px);
-}
-section.services .flex-continer article.flex-item:hover{
-    border-color: var(--main-color);
-    transform: scale(1.1);
-}
-section.services .flex-continer article.flex-item .icon{
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: var(--main-color);
 }
 section.services .flex-continer article.flex-item h3{
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
-section.services .flex-continer article.flex-item p{
-    font-size: 1rem;
-    color: #ffffffbb;
+section.services .flex-continer article.flex-item.inter{
+    opacity: 1;
 }
-@media screen and (max-width: 477px) {
-    section.services .flex-continer{
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(4, 150px);
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    section.services .flex-continer article.flex-item{
-        width: 100%;
-        height: 100%;
-    }
+section.services .flex-continer article.flex-item .icon{
+    position: absolute;
+    color: var(--main-color)
+}
+section.services .flex-continer article.flex-item.one{
+    grid-column: 1 / -1;
+    transform: translateY(50px);
+}
+section.services .flex-continer article.flex-item.one.inter{
+    transform: translateY(0px);
+}
+section.services .flex-continer article.flex-item.two{
+    transform: translateX(-50px);
+}
+section.services .flex-continer article.flex-item.two.inter{
+    transform: translateX(0px);
+}
+section.services .flex-continer article.flex-item.three{
+    transform: translateX(50px);
+}
+section.services .flex-continer article.flex-item.three.inter{
+    transform: translateX(0px);
+}
+section.services .flex-continer article.flex-item.four{
+    grid-column: 1 / -1;
+    transform: translateY(50px);
+}
+section.services .flex-continer article.flex-item.four.inter{
+    transform: translateY(0px);
+}
+section.services .flex-continer article.flex-item.five{
+    transform: translateX(-50px);
+}
+section.services .flex-continer article.flex-item.five.inter{
+    transform: translateX(0px);
+}
+section.services .flex-continer article.flex-item.six{
+    transform: translateX(50px);
+}
+section.services .flex-continer article.flex-item.six.inter{
+    transform: translateX(0px);
+}
+section.services .flex-continer article.flex-item.seven{
+    grid-column: 1 / -1;
+    transform: translateY(50px);
+}
+section.services .flex-continer article.flex-item.seven.inter{
+    transform: translateY(0px);
+}
+section.services .flex-continer article.flex-item.one .icon{
+    bottom: -50px;
+    right: 0;
+    font-size: 20rem;
+}
+section.services .flex-continer article.flex-item.two .icon{
+    top: 50px;
+    right: 20px;
+    font-size: 10rem;
+}
+section.services .flex-continer article.flex-item.three .icon{
+    top: 50px;
+    right: 20px;
+    font-size: 10rem;
+}
+section.services .flex-continer article.flex-item.four .icon{
+    bottom: -50px;
+    left: 0;
+    font-size: 20rem;
+}
+section.services .flex-continer article.flex-item.five .icon{
+    top: 50px;
+    right: 0;
+    font-size: 10rem;
+}
+section.services .flex-continer article.flex-item.six .icon{
+    top: 50px;
+    right: 20px;
+    font-size: 10rem;
+}
+section.services .flex-continer article.flex-item.seven .icon{
+    top: 50px;
+    right: 20px;
+    font-size: 10rem;
 }
