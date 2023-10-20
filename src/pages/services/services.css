@@ -2,6 +2,7 @@ section.services{
     text-align: center;
     height: auto;
     padding: 1rem;
+    overflow: hidden;
 }
 section.services h1 span{
     text-transform: lowercase;
