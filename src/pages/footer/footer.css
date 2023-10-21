@@ -5,6 +5,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     margin-top: 1rem;
+    background-color: var(--second-bg-color);
 }
 footer.maxWidth .box{
     width: 24%;
@@ -37,6 +38,29 @@ footer.maxWidth .box-border a:hover{
 footer.maxWidth .box-border a .icons{
     color: var(--main-color);
 }
+
+footer.maxWidth .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+footer.maxWidth .button a{
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: all .1s;
+}
+footer.maxWidth .button a:hover{
+    background-color: var(--main-color);
+    color: #000;
+}
 @media screen and (max-width: 650px) {
     footer.maxWidth{
         padding-left: 1rem;
@@ -50,5 +74,8 @@ footer.maxWidth .box-border a .icons{
     }
     footer.maxWidth .box-border{
         width: 80%;
+    }
+    footer.maxWidth .button{
+        width: 100%;
     }
 }
