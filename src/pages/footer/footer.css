@@ -6,10 +6,14 @@ footer{
     align-items: center;
     margin-top: 1rem;
     background-color: var(--second-bg-color);
+    gap: 10px;
 }
 footer.maxWidth .box{
-    width: 24%;
+    width: 30%;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer.maxWidth .box img{
     width: 200px;
@@ -18,10 +22,9 @@ footer.maxWidth .box img{
 }
 footer.maxWidth .box-border{
     padding-top: 1rem;
-    border-top: 2px solid var(--second-bg-color);
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 footer.maxWidth .box-border a{
@@ -44,6 +47,7 @@ footer.maxWidth .button{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: auto;
 }
 footer.maxWidth .button a{
     font-size: 1.2rem;
@@ -61,11 +65,11 @@ footer.maxWidth .button a:hover{
     background-color: var(--main-color);
     color: #000;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 821px) {
     footer.maxWidth{
-        padding-left: 1rem;
-        justify-content: flex-start;
-        align-items: flex-start;
+        padding-bottom: 150px;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
     footer.maxWidth .box.img{
@@ -73,9 +77,28 @@ footer.maxWidth .button a:hover{
         height: auto;
     }
     footer.maxWidth .box-border{
-        width: 80%;
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
     }
     footer.maxWidth .button{
         width: 100%;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 350px) {
+    footer.maxWidth .button{
+        width: 100%;
+        height: 100px;
+        gap: 8px;
+    }
+    footer.maxWidth .box-border p{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 280px) {
+    footer.maxWidth .box-border p{
+        font-size: .7rem;
     }
 }

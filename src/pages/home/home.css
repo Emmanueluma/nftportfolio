@@ -12,7 +12,7 @@ header{
 }
 header::after{
     content: '';
-    background-color: #00000067;
+    background-color: #0000003b;
     position: absolute;
     top: 0;
     left: 0;
@@ -53,7 +53,7 @@ header .flex--container .text h1{
 }
 @keyframes header {
     100%{
-        font-size: 4rem;
+        font-size: rem;
         opacity: 1;
     }
 }
