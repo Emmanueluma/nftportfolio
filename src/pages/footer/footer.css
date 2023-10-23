@@ -59,7 +59,7 @@ footer.maxWidth .button a{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    transition: all .1s;
+    transition: all .3s;
 }
 footer.maxWidth .button a:hover{
     background-color: var(--main-color);

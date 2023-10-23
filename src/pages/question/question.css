@@ -3,7 +3,6 @@ section.question{
     text-align: center;
     box-sizing: border-box;
     background-color: var(--second-bg-color);
-    /* clip-path: polygon(0 4%, 100% 0, 100% 94%, 0% 100%); */
 }
 section.question .flex--container{
     margin: 0 auto;
