@@ -114,6 +114,7 @@ body{
   align-items: center;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
 }
 .linkbtn .icon{
   font-size: 1.4rem;

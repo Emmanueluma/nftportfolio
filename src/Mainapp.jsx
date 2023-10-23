@@ -7,11 +7,12 @@ import Footer from './pages/footer/Footer';
 import Question from './pages/question/Question';
 import Partnerships from './pages/partnerships/Partnerships';
 const Mainapp = () => {
+  const [article, setArticle] = useState(false);
   return (
     <>
-      <Home />
+      <Home article={article} setArticle={setArticle} />
       <main>
-        <About />
+        <About article={article} setArticle={setArticle} />
         <Services />
         <Question />
         <Partnerships />

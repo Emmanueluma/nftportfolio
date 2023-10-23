@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from 'react';
 import {Link} from 'react-router-dom'
 
 
-const About = () => {
+const About = ({setArticle}) => {
     const photo1Ref = useRef();
     const [photo1Visible, setPhoto1Visible] = useState(false);
 
@@ -21,7 +21,9 @@ const About = () => {
         }, Option)
         photo1Observer.observe(photo1Ref.current)
     },[])
-
+    const toggleArticle = () => {
+    setArticle(prev => !prev)
+    }
 
   return (
     <section className="maxWidth about" id="about">
@@ -34,7 +36,7 @@ const About = () => {
                     DINERO is on a mission to empower, educate, and connect Web3 explorers. We are dedicated to providing a safe and inclusive space where our members feel valued, supported, and part of a global movement. Through networking opportunities, educational resources, and a commitment to personal and collective growth, we aim to be the trusted home for NFT enthusiasts and Web3 explorers.
                 </p>
                 <div className='links'>
-                <button className="linkbtn" > read more <WiDirectionUpRight className="icon" /></button>
+                <button className="linkbtn" onClick={toggleArticle} > read more <WiDirectionUpRight className="icon" /></button>
                 <Link className="linkform" to='/form'>join <WiDirectionUpRight className="icon" /></Link>
                 </div>
             </div>

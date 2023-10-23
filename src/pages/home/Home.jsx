@@ -7,8 +7,9 @@ import {BiPause} from 'react-icons/bi'
 import { Typewriter } from 'react-simple-typewriter'
 import sound from '../../asset/sound.mp3'
 import { useRef, useState } from 'react'
+import Article from '../article/Article'
 
-const Home = () => {
+const Home = ({ article, setArticle }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isOpened, setIsOpended] = useState(false);
 
@@ -25,6 +26,7 @@ const Home = () => {
   return (
     <header id="home" className='maxWidth' >
         <Nav />
+        <Article article={article} setArticle={setArticle} />
         <div className="flex--container">
           <div className='text'>
               {/* <p className='p'>DINERO</p> */}

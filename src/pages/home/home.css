@@ -12,7 +12,7 @@ header{
 }
 header::after{
     content: '';
-    background-color: #0000003b;
+    background-color: #0000001e;
     position: absolute;
     top: 0;
     left: 0;
