@@ -11,8 +11,6 @@
   transition: all .3s;
 }
 :root{
-  /* --bg-color: #1f242d;
-  --second-bg-color: #323946; */
   --bg-color: #000;
   --second-bg-color: #171818;
   --text-color: #fff;
