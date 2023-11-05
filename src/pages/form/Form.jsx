@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './form.css'
-import img from '../../asset/Dinero white.JPEG.jpg'
+import img from '../../asset/homepage.png'
 import {BiLoaderAlt} from 'react-icons/bi'
 import {Link} from 'react-router-dom'
 import {useNavigate} from 'react-router-dom'
