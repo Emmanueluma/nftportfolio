@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './partnerships.css'
 import {WiDirectionUpRight} from 'react-icons/wi'
-import img from '../../asset/DineroHome.png'
+import img from '../../asset/homepage.png'
 
 const Partnerships = () => {
   const pRef = useRef();
