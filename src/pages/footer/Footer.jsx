@@ -20,9 +20,9 @@ const Footer = () => {
             <a href="https://www.youtube.com/@Dineroxyz" target="_blank" rel="noopener noreferrer"><FaYoutube className='icons' /></a>
             </section>
             <a className='a' href="#home"><BsFillArrowUpSquareFill /></a> */}
-            <div className="box img">
+            {/* <div className="box img">
                 <img src={img} alt="" />
-            </div>
+            </div> */}
             <div className="box button">
             <a href="mailto:dinerocommunity@gmail.com" target="_blank" rel="noopener noreferrer"><MdOutlineEmail className='icons' /></a>
             <a href="https://www.instagram.com/direct/t/17848597500009533" target="_blank" rel="noopener noreferrer"><AiOutlineInstagram className='icons' /></a>
