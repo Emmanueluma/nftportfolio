@@ -9,6 +9,7 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 70px;
 }
 header::after{
     content: '';
@@ -22,7 +23,6 @@ header::after{
 header .flex--container{
     height: calc(100% - 50px);
     padding-top: 2rem;
-    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
