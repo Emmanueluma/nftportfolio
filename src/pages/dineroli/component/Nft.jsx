@@ -17,7 +17,7 @@ const Nft = () => {
             <a href="https://twitter.com/emmanelonuoha/status/1548964111282847746?s=46" target="_blank" rel="noopener noreferrer">3.10 What are Blue Chip NFTs</a>
             <a href="https://twitter.com/centronob/status/1612460912211886082?s=46" target="_blank" rel="noopener noreferrer">3.11 How To Use NFT Track</a>
             <a href="https://www.binance.com/en/blog/nft/a-guide-to-nft-rarity-9071635817709795895" target="_blank" rel="noopener noreferrer">3.12 How To Check NFT Rarity</a>
-            <a href="https://cointelegraph.com/explained/what-are-nft-royalties-and-how-do-they-work" target="_blank" rel="noopener noreferrer">3.13 Royalties In NFT</a>
+            <a href="https://cointelegraph.com/explained/what-are-nft-royalties-and-how-do-they-work" target="_blank" rel="noopener noreferrer">3.13 Royalties In NFT </a>
         </article>
 
     </div>
