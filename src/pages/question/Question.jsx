@@ -1,5 +1,5 @@
 import './question.css'
-import QuestionImg from '../../asset/question.jpg';
+import QuestionImg from '../../asset/joinDinero.png';
 import {Link} from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react';
 
