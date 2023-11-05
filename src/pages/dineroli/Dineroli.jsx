@@ -2,6 +2,10 @@ import './dinero.css'
 import {Link} from 'react-router-dom'
 /* import {IoIosArrowBack} from 'react-icons/io' */
 import { Outlet } from 'react-router-dom'
+import img1 from '../../../src/asset/d1.jpg'
+import img2 from '../../../src/asset/d2.jpg'
+import img3 from '../../../src/asset/d3.jpg'
+import img4 from '../../../src/asset/d4.jpg'
 
 const Dineroli = () => {
   return (
@@ -10,16 +14,16 @@ const Dineroli = () => {
         
       <section className="massive--link">
         <Link to='/dineroli/cryptobasic' className='link'>
-          <h1>crypto basic</h1>
+          <img className="img--fill" src={img1} alt="imageOne" />
         </Link>
-        <Link to='/dineroli/defi' className='link'>
-          <h1>defi</h1>
+        <Link  to='/dineroli/defi' className='link'>
+          <img className="img--fill" src={img2} alt="imageTwo" />
         </Link>
         <Link to='/dineroli/nftbasic' className='link'>
-          <h1>nft basic</h1>
+          <img className="img--fill" src={img3} alt="imageThree" />
         </Link>
         <Link to='/dineroli/originals' className='link'>
-          <h1>ordinals</h1>
+          <img className="img--fill" src={img4} alt="imageFour" />
         </Link>
       </section>
       <Outlet />
